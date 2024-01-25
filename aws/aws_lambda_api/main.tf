@@ -2,7 +2,7 @@
 # See also: https://github.com/hashicorp/terraform/issues/10157
 # See also: https://github.com/carrot/terraform-api-gateway-cors-module/
 
-# This aws_lambda_function is used when invoked with a local zipfile
+###### This aws_lambda_function is used when invoked with a local zipfile
 resource "aws_lambda_function" "local_zipfile" {
   count = "${var.function_s3_bucket == "" ? 1 : 0}"
 
